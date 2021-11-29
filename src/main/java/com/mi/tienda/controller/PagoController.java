@@ -67,12 +67,12 @@ public class PagoController {
     	preference.setPaymentMethods(paymentMethods);
     	
     	BackUrls backUrls = new BackUrls(
-                "https://evening-sea-17794.herokuapp.com/pago/success",
-                "https://evening-sea-17794.herokuapp.com/pago/pending",
-                "https://evening-sea-17794.herokuapp.com/pago/failure");
+                "https://tienda-de-celulares.herokuapp.com/pago/success",
+                "https://tienda-de-celulares.herokuapp.com/pago/pending",
+                "https://tienda-de-celulares.herokuapp.com/pago/failure");
        
        preference.setBackUrls(backUrls);
-       preference.setNotificationUrl("https://evening-sea-17794.herokuapp.com//pago/notification");
+       preference.setNotificationUrl("https://tienda-de-celulares.herokuapp.com/pago/notification");
        preference.getAutoReturn();
       
        Preference resulset = preference.save();
